@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func countsOfWordsInString(var string: String) -> [String:Int] {
         var wordsAndCounts = [String:Int]()
-        let punctuation = NSCharacterSet(charactersInString: ".,!?-'\"")
+        let punctuation = NSCharacterSet(charactersInString: ".,!?-\"")
         string = string.componentsSeparatedByCharactersInSet(punctuation).joinWithSeparator("")
         let arrayOfWords = string.componentsSeparatedByString(" ")
         

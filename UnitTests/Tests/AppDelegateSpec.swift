@@ -28,7 +28,10 @@ class AppDelegateSpec: QuickSpec {
                         "Dexter"                    : "Showtime",
                         "Entourage"                 : "HBO"]
         
-//        let sentence = 
+        let forrestGumpQuote = "Lieutenant Dan got me invested in some kind of a fruit company. So then I got a call from him, saying we don't have to worry about money no more. And I said, that's good! One less thing."
+        
+        let quoteWordCounts = ["lieutenant": 1,
+            "dan": 1, "got": 2, "me": 1, "invested": 1, "in": 1, "some": 1, "kind": 1, "of": 1, "a": 2, "fruit": 1, "company": 1, "so": 1, "then": 1, "i": 2, "call": 1, "from": 1, "him": 1, "saying": 1, "we": 1, "don't": 1, "have": 1, "to": 1, "worry": 1, "about":1, "money": 1, "no": 1, "more": 1, "and": 1, "said": 1, "that's":1, "good": 1, "one": 1, "less": 1, "thing": 1]
         
         describe("namesOfHBOShowsInDictionary") {
             let showsOnHBO = appDelegate.namesOfHBOShowsInDictionary(shows)
@@ -39,7 +42,9 @@ class AppDelegateSpec: QuickSpec {
         }
         
         describe("countsOfWordsInString") {
-            
+            it("returns a dictionary whose keys are each word in the string input and the value is the number of occurences of that word") {
+                expect(appDelegate.countsOfWordsInString(forrestGumpQuote)).to(equal(quoteWordCounts))
+            }
         }
     }
 }
