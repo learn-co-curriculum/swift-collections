@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The goal of this lab is to give you practice manipulating collections using Swift. Reference the Apple documentation and the to look for built-in methods on the various collection classes that can help you.
+The goal of this lab is to give you practice manipulating collections using Swift. Reference the Apple documentation to look for built-in methods on the various collection classes that can help you.
 
 ## Instructions
 
@@ -12,7 +12,7 @@ Navigate to the AppDelegate.swift file. Declare each of these methods based on t
 
 2. `namesOfHBOShowsInDictionary:` should take a dictionary (in which the keys and values are both strings). It should return an array containing the keys (i.e. names of shows) whose value is "HBO".
 
-3. `countsOfWordsInString:` should take on string argument. It should return a dictionary that has a key for each word in the submitted string, whose associated value is the count of how many times that word appears in the argument string. Be sure to remove the punctuation (`.``,``-``;``!``?``"`) and ignore capitalization.
+3. `countsOfWordsInString:` should take one string argument. It should return a dictionary that has a key for each word in the submitted string, whose associated value is the count of how many times that word appears in the argument string. Be sure to remove punctuation (`.``,``-``;``!``?``"`) and ignore capitalization.
 
 	For example, if given the string "I think, I thought; I think I.", the method should return `[ "i": 4, "think": 2, "thought": 1 }`.
 	
